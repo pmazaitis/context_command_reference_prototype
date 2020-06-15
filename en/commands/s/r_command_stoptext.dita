@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_command_stoptext" xml:lang="en">
+    <title>\stoptext</title>
+    <shortdesc>Use the <cmdname>\stoptext</cmdname> command to mark the end of the text content in a
+        document. Everything after <cmdname>\stoptext</cmdname> will be
+        ignored.</shortdesc>
+    <prolog>
+        <metadata>
+            <category />
+            <prodinfo>
+                <prodname>ConTeXt</prodname>
+                <vrmlist>
+                    <vrm version="iv" release="production"/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+    <refbody>
+        <refsyn id="syntax">
+            <title>Syntax</title>
+            <synph>
+                <kwd>\stoptext</kwd>
+            </synph>
+        </refsyn>
+        <example otherprops="no_output">
+            <title>Minimal Working Example</title>
+            <codeblock>
+\starttext
+
+Hello World!
+
+\stoptext
+            </codeblock>
+        </example>
+    </refbody>
+<!--    <related-links>
+        <link href="" scope="external" format="html">
+            <linktext>Commmand definition in the <ph conkeyref="definitions/product_name"/> source file <filepath>core-ini.mkiv</filepath></linktext>
+        </link>
+    </related-links>-->
+</reference>

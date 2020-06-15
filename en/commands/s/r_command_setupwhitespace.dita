@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_command_setupwhitespace" xml:lang="en">
+    <title>\setupwhitespace</title>
+    <shortdesc>The <cmdname>\setupwhitespace</cmdname> defines spacing between paragraphs.</shortdesc>
+    <prolog>
+        <metadata>
+            <audience type="user"/>
+            <category>style</category>
+            <prodinfo>
+                <prodname>ConTeXt</prodname>
+                <vrmlist>
+                    <vrm version="iv" release="production" modification=""/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+    <refbody>
+        <refsyn id="syntax">
+            <title>Syntax</title>
+            <synph>\setupwhitespace <delim>[</delim><var importance="optional">OPTIONS</var><delim>]</delim></synph>
+            <simpletable>
+                <sthead>
+                    <stentry>Name</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow id="short_options">
+                    <stentry>
+                        <xref keyref="OPTIONS" type="reference"/>
+                    </stentry>
+                    <stentry>
+                        <ph conkeyref="OPTIONS/placeholder_desc"/>
+                    </stentry>
+                    <stentry>fix, fixed, flexible, line, halfline, quarterline, <ph importance="default">none</ph>, small, medium, big, default, <xref keyref="DIMENSION" type="reference"/></stentry>
+                </strow>
+            </simpletable>
+        </refsyn>
+        <section id="options">
+            <title>Options</title>
+            <table frame="all" rowsep="1" colsep="1" id="options_table">
+                <tgroup cols="2">
+                    <colspec colname="value_name" colnum="1" colwidth="1*"/>
+                    <colspec colname="value_desc" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Keyword</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row id="options_start">
+                            <entry>fix</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>fixed</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>flexible</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>line</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>halfline</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>quarterline</entry>
+                            <entry></entry>
+                        </row>
+                        <row importance="default">
+                            <entry>none</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>small</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>medium</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>big</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>default</entry>
+                            <entry></entry>
+                        </row>
+                        <row id="options_stop">
+                            <entry>DIMENSION</entry>
+                            <entry>
+                                <xref keyref="DIMENSION" type="reference"/>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <section id="notes">
+            <title>Notes</title>
+            <p>This command does not affect footnotes, marginals, and header/footer lines.</p>
+        </section>
+        <example id="mwe" otherprops="no_output">
+            <title>Minimal Working Example</title>
+            <codeblock outputclass="normalize-space">
+\starttext
+
+\setupwhitespace[medium]
+
+\stoptext
+            </codeblock>
+        </example>
+        <!--<example id="example_02" otherprops="no_output">
+        <title>Descriptive Example Title</title>
+        <codeblock outputclass="normalize-space">
+\starttext
+
+
+
+\stoptext
+        </codeblock>
+    </example>-->
+    </refbody>
+    <related-links>
+        <link href="https://source.contextgarden.net/tex/context/base/mkiv/spac-ver.mkiv" scope="external" format="html">
+            <linktext>Command definition in the <ph conkeyref="definitions/product_name"/> source file  <filepath>spac-ver.mkiv</filepath></linktext>
+        </link>
+    </related-links>
+</reference>

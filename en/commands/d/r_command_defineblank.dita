@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_command_defineblank" xml:lang="en">
+    <title>\defineblank</title>
+    <shortdesc>The <cmdname>\defineblank</cmdname> command creates a reusable, labeled preset for an
+        amount of skip. This command may also define the skip for the labeled preset.</shortdesc>
+    <prolog>
+        <metadata>
+            <audience type="user"/>
+            <category>spacing</category>
+            <prodinfo>
+                <prodname>ConTeXt</prodname>
+                <vrmlist>
+                    <vrm version="iv" release="production"/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+    <refbody>
+        <refsyn id="syntax">
+            <title>Syntax</title>
+            <synph> \defineblank <delim>[</delim>
+                <var importance="required">NAME</var>
+                <delim>]</delim>
+                <delim>[</delim>
+                <var importance="optional">OPTIONS</var>
+                <delim>]</delim>
+            </synph>
+            <simpletable>
+                <sthead>
+                    <stentry>Argument</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry><xref keyref="NAME" type="reference"/></stentry>
+                    <stentry><ph conkeyref="NAME/placeholder_desc"/></stentry>
+                    <stentry><ph conkeyref="NAME/placeholder_value"/></stentry>
+                </strow>
+                <strow conkeyref="command_vspacing/short_options">
+                    <stentry/>
+                    <stentry/>
+                    <stentry/>
+                </strow>
+            </simpletable>
+        </refsyn>
+        <section id="options">
+            <title>Options</title>
+            <table frame="all" rowsep="1" colsep="1" id="options_table">
+                <tgroup cols="2">
+                    <colspec colname="value_name" colnum="1" colwidth="1*"/>
+                    <colspec colname="value_desc" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Keyword</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row conkeyref="command_vspacing/options_start" conrefend="default.dita#default/options_stop" >                            
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <example id="mwe" otherprops="no_output">
+            <title>Minimal Working Example</title>
+            <codeblock>
+\starttext  
+             
+\defineblank[AroundVerbatim][medium]
+                
+\setuptyping [before={\blank[AroundVerbatim]},
+              after= {\blank[AroundVerbatim]}]
+              
+\stoptext
+            </codeblock>
+        </example>
+    </refbody>
+    <related-links>
+        <link href="https://source.contextgarden.net/tex/context/base/mkiv/spac-ver.mkiv" scope="external" format="html">
+            <linktext>Command definition in the <ph conkeyref="definitions/product_name"/> source file  <filepath>spac-ver.mkiv</filepath></linktext>
+        </link>
+    </related-links>
+</reference>

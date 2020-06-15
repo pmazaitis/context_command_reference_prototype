@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_command_definebuffer" xml:lang="en">
+    <title>\definebuffer</title>
+    <shortdesc>The <cmdname>\definebuffer</cmdname> command creates a new named buffer.</shortdesc>
+    <prolog>
+        <metadata>
+            <audience type="user"/>
+            <category>style</category>
+            <prodinfo>
+                <prodname>ConTeXt</prodname>
+                <vrmlist>
+                    <vrm version="iv" release="production" modification=""/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+    <refbody>
+        <refsyn id="syntax">
+            <title>Syntax</title>
+            <synph>\definebuffer <delim>[</delim><var>NAME</var><delim>]</delim><delim>[</delim><var importance="optional">BUFFER</var><delim>]</delim><delim>[</delim><var importance="optional">SETTINGS</var><delim>]</delim></synph>
+            <simpletable>
+                <sthead>
+                    <stentry>Name</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry>NAME</stentry>
+                    <stentry>
+                        <xref keyref="NAME" type="reference"/>
+                    </stentry>
+                    <stentry>
+                        <ph conkeyref="NAME/placeholder_desc"/>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>BUFFER</stentry>
+                    <stentry>
+                        <xref keyref="BUFFER" type="reference"/>
+                    </stentry>
+                    <stentry>
+                        <ph conkeyref="BUFFER/placeholder_desc"/>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>SETTINGS</stentry>
+                    <stentry>
+                        <xref keyref="SETTINGS" type="reference"/>
+                    </stentry>
+                    <stentry>See <xref href="#./settings"/>.</stentry>
+                </strow>
+            </simpletable>
+        </refsyn>
+        <section id="settings">
+            <title>Settings</title>
+            <table frame="all" rowsep="1" colsep="1" id="settings_table">
+                <tgroup conkeyref="command_setupbuffer/settings_start" conrefend="default.dita#default/settings_stop" cols="2">
+                    <colspec/>
+                    <colspec/>
+                    <thead>
+                        <row>
+                            <entry></entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <note>Inherits settings from <xref href="../../commands/s/r_command_setupbuffer.dita"/>.</note>
+        </section>
+        <!--<section id="notes">
+            <title>Notes</title>
+            <p></p>
+        </section>-->
+        <example id="mwe" otherprops="no_output">
+            <title>Minimal Working Example</title>
+            <codeblock outputclass="normalize-space">
+\starttext
+
+\definebuffer[ExampleBuffer]
+
+\startExampleBuffer
+
+\input knuth
+
+\stopExampleBuffer 
+
+\stoptext
+            </codeblock>
+        </example>
+        <!--<example id="example_02" otherprops="no_output">
+        <title>Descriptive Example Title</title>
+        <codeblock outputclass="normalize-space">
+\starttext
+
+
+
+\stoptext
+        </codeblock>
+    </example>-->
+    </refbody>
+    <related-links>
+        <link href="https://source.contextgarden.net/tex/context/base/mkiv/buff-ini.mkiv" scope="external" format="html">
+            <linktext>Command definition in the <ph conkeyref="definitions/product_name"/> source file  <filepath>buff-ini.mkiv</filepath></linktext>
+        </link>
+    </related-links>
+</reference>

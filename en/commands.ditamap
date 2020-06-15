@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en">
+    <title>ConTeXt Commands</title>
+    <topichead navtitle="ConTeXt Commands">
+        <topicref href="commands/b/r_command_bf.dita"/>
+        <topicref href="commands/b/r_command_bold.dita"/>
+        <topicref href="commands/b/r_command_blank.dita"/>
+        <topicref href="commands/d/r_command_defineblank.dita"/>
+        <topicref href="commands/d/r_command_definebuffer.dita"/>
+        <topicref href="commands/g/r_command_getbuffer.dita"/>
+        <topicref href="commands/i/r_command_input.dita"/>
+        <topicref href="commands/s/r_command_setupalign.dita"/>
+        <topicref href="commands/s/r_command_setupblank.dita"/>
+        <topicref href="commands/s/r_command_setupbuffer.dita"/>
+        <topicref href="commands/s/r_command_setuptyping.dita"/>
+        <topicref href="commands/s/r_command_setupwhitespace.dita"/>
+        <topicref href="commands/s/r_command_startbuffer.dita"/>
+        <topicref href="commands/s/r_command_starttext.dita"/>
+        <topicref href="commands/s/r_command_stopbuffer.dita"/>
+        <topicref href="commands/s/r_command_stoptext.dita"/>
+        <topicref href="commands/t/r_command_typebuffer.dita"/>
+        <topicref href="commands/v/r_command_vspacing.dita"/>
+    </topichead>
+</map>

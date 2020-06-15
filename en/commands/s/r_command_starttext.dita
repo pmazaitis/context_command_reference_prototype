@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_command_starttext" xml:lang="en">
+    <title>\starttext</title>
+    <shortdesc>The <cmdname>\starttext</cmdname> command marks the start the text content of a
+        document. Commands that appear in the file before <cmdname>\starttext</cmdname> will be
+        used, but all other content will be ignored.</shortdesc>
+    <prolog>
+        <metadata>
+            <audience type="user"/>
+            <category />
+            <prodinfo>
+                <prodname>ConTeXt</prodname>
+                <vrmlist>
+                    <vrm version="iv" release="production"/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+    <refbody>
+        <refsyn id="syntax">
+            <title>Syntax</title>
+            <synph>
+                \starttext
+            </synph>
+        </refsyn>
+        <example otherprops="no_output">
+            <title>Minimal Working Example</title>
+            <codeblock>
+\starttext
+
+Hello World!
+
+\stoptext
+            </codeblock>
+        </example>
+    </refbody>
+<!--    <related-links>
+        <link href="" scope="external" format="html">
+            <linktext>Commmand definition in the <ph conkeyref="definitions/product_name"/> source file <filepath></filepath></linktext>
+        </link>
+    </related-links>-->
+</reference>

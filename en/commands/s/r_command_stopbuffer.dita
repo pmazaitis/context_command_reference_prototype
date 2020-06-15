@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_command_stopbuffer" xml:lang="en">
+    <title>\stopbuffer</title>
+    <shortdesc>The <cmdname>\stopbuffer</cmdname> command marks the beginning of a buffer.</shortdesc>
+    <prolog>
+        <metadata>
+            <audience type="user"/>
+            <category>style</category>
+            <prodinfo>
+                <prodname>ConTeXt</prodname>
+                <vrmlist>
+                    <vrm version="iv" release="production" modification=""/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+    <refbody> 
+        <refsyn>
+            <title>Syntax</title>
+            <synph>
+                \startbuffer  
+            </synph>
+        </refsyn>
+        <!--<section id="notes">
+            <title>Notes</title>
+            <p></p>
+        </section>-->
+        <example otherprops="no_output">
+            <title>Minimal Working Example</title>
+            <codeblock>
+\starttext
+
+\startbuffer[ExampleBuffer]
+
+\input knuth
+
+\stopbuffer
+
+\stoptext
+            </codeblock>
+        </example>
+        <!--<example id="example_02" otherprops="no_output">
+        <title>Descriptive Example Title</title>
+        <codeblock outputclass="normalize-space">
+\starttext
+
+
+
+\stoptext
+        </codeblock>
+    </example>-->
+    </refbody>
+    <related-links>
+        <link href="https://source.contextgarden.net/tex/context/base/mkiv/enco-ini.mkiv" scope="external" format="html">
+            <linktext>Command definition in the <ph conkeyref="definitions/product_name"/> source file  <filepath>enco-ini.mkiv</filepath></linktext>
+        </link>
+    </related-links>
+</reference>

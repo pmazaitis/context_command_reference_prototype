@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_command_vspacing" xml:lang="en">
+    <title>\vspacing</title>
+    <shortdesc>The <cmdname>\vspacing</cmdname> command inserts <term keyref="skip">skip</term> into the text block. Use keywords to indicate preset amounts
+        of skip, or use dimensions to create spaces of arbitrary skip.</shortdesc>
+    <prolog>
+        <metadata>
+            <audience type="user"/>
+            <category>system</category>
+            <prodinfo>
+                <prodname>ConTeXt</prodname>
+                <vrmlist>
+                    <vrm version="iv" release="production" modification=""/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+    <refbody>
+        <refsyn id="syntax">
+            <title>Syntax</title>
+            <synph>\vspacing <delim>[</delim><var importance="optional">OPTIONS</var><delim>]</delim></synph>
+            <simpletable>
+                <sthead>
+                    <stentry>Name</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow id="short_options">
+                    <stentry>
+                        <xref keyref="OPTIONS" type="reference"/>
+                    </stentry>
+                    <stentry>
+                        <ph conkeyref="OPTIONS/placeholder_desc"/>
+                    </stentry>
+                    <stentry>preference, samepage, max, force, enable, disable, nowhite, packed, back, overlay, always, weak, strong, default, before, inbetween, after, fixed, flexible, none, small, medium, big, line, halfline, quarterline, formula, white, height, depth, standard, small, medium, big, line, halfline, quarterline, formula, white, height, depth, <xref keyref="NUMBER" type="reference"/>, <xref keyref="NUMBER" type="reference"/>, <xref keyref="NUMBER" type="reference"/>, <xref keyref="DIMENSION" type="reference"/>, <xref keyref="NAME" type="reference"/></stentry>
+                </strow>
+            </simpletable>
+        </refsyn>
+        <section id="options">
+            <title>Options</title>
+            <table frame="all" rowsep="1" colsep="1" id="options_table">
+                <tgroup cols="2">
+                    <colspec colname="value_name" colnum="1" colwidth="1*"/>
+                    <colspec colname="value_desc" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Keyword</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row id="options_start">
+                            <entry>preference</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>samepage</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>max</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>force</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>enable</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>disable</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>nowhite</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>packed</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>back</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>overlay</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>always</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>weak</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>strong</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>default</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>before</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>inbetween</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>after</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>fixed</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>flexible</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>none</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>small</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>medium</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>big</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>line</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>halfline</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>quarterline</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>formula</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>white</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>height</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>depth</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>standard</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>small</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>medium</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>big</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>line</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>halfline</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>quarterline</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>formula</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>white</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>height</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>depth</entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry>NUMBER</entry>
+                            <entry>
+                                <xref keyref="NUMBER" type="reference"/>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>NUMBER</entry>
+                            <entry>
+                                <xref keyref="NUMBER" type="reference"/>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>NUMBER</entry>
+                            <entry>
+                                <xref keyref="NUMBER" type="reference"/>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>DIMENSION</entry>
+                            <entry>
+                                <xref keyref="DIMENSION" type="reference"/>
+                            </entry>
+                        </row>
+                        <row id="options_stop">
+                            <entry>NAME</entry>
+                            <entry>
+                                <xref keyref="NAME" type="reference"/>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <section id="notes">
+            <title>Notes</title>
+            <note><p>To maintain grid consistency, the amount of skip is different if gridsnapping is
+                enabled.</p></note>
+            <note><p>Not all of these values are not given in absolute units: vertical spacing is
+                dependent on the current font size (except \zeropoint which is always 0pt).</p></note><note><p>Keywords accept multipliers. For example, to insert whitespace as large as four lines:</p><p><tt>[4*big]</tt></p></note>
+            
+            <simpletable frame="all" relcolwidth="1* 1* 1*" id="simpletable_vspacing_options_1">
+                <sthead>
+                    <stentry>Keyword</stentry>
+                    <stentry>Space Without Gridsnapping</stentry>
+                    <stentry>Space With Gridsnapping</stentry>
+                </sthead>
+                <strow>
+                    <stentry>none</stentry>
+                    <stentry>\zeropoint</stentry>
+                    <stentry>\zeropoint</stentry>
+                </strow>
+                <strow importance="default">
+                    <stentry>big</stentry>
+                    <stentry>\bigskipamount</stentry>
+                    <stentry>\bodyfontlineheight</stentry>
+                </strow>
+                <strow>
+                    <stentry>medium</stentry>
+                    <stentry>\medskipamount</stentry>
+                    <stentry>
+                        <p>0.5\bodyfontlineheight</p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>small</stentry>
+                    <stentry>\smallskipamount</stentry>
+                    <stentry>
+                        <p>0.25\bodyfontlineheight</p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>line</stentry>
+                    <stentry>\openlineheight</stentry>
+                    <stentry>\bodyfontlineheight</stentry>
+                </strow>
+                <strow>
+                    <stentry>halfline</stentry>
+                    <stentry>
+                        <p>0.5\openlineheight</p>
+                    </stentry>
+                    <stentry>
+                        <p>0.5\bodyfontlineheight</p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>quarterline</stentry>
+                    <stentry>0.25\openlineheight</stentry>
+                    <stentry>0.25\bodyfontlineheight</stentry>
+                </strow>
+                <strow>
+                    <stentry>formula</stentry>
+                    <stentry>\medskipamount</stentry>
+                    <stentry>0.5\bodyfontlineheight</stentry>
+                </strow>
+                <strow>
+                    <stentry>white</stentry>
+                    <stentry>\parskip</stentry>
+                    <stentry>\bodyfontwhitespace</stentry>
+                </strow>
+                <strow>
+                    <stentry>height</stentry>
+                    <stentry>
+                        <p>\strutht</p>
+                    </stentry>
+                    <stentry>
+                        <p>\bodyfontstrutheight</p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>depth</stentry>
+                    <stentry>
+                        <p>\strutdp</p>
+                    </stentry>
+                    <stentry>
+                        <p>\bodyfontstrutdepth</p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>standard</stentry>
+                    <stentry>
+                        <p>0.75\openlineheight</p>
+                    </stentry>
+                    <stentry>
+                        <p>0.75\openlineheight</p>
+                    </stentry>
+                </strow>
+            </simpletable>
+        </section>
+        <example id="mwe" otherprops="no_output">
+            <title>Minimal Working Example</title>
+            <codeblock outputclass="normalize-space">
+\starttext
+
+Here's our first sentence.
+
+\vspacing[big]
+
+We need to put more space above and less space below this sentence.
+
+\vspacing[medium]
+
+Here's our last sentence.            
+
+\stoptext
+            </codeblock>
+        </example>
+<!--        <example id="example_02" otherprops="no_output">
+        <title>Descriptive Example Title</title>
+        <codeblock outputclass="normalize-space">
+\starttext
+              
+
+
+\stoptext
+        </codeblock>
+    </example>-->
+    </refbody>
+    <related-links>
+        <link href="https://source.contextgarden.net/tex/context/base/mkiv/spac-ver.mkiv" scope="external" format="html">
+            <linktext>Command definition in the <ph conkeyref="definitions/product_name"/> source file  <filepath>spac-ver.mkiv</filepath></linktext>
+        </link>
+    </related-links>
+</reference>

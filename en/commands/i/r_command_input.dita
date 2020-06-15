@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_command_input" xml:lang="en">
+    <title>\input</title>
+    <shortdesc>The <cmdname>\input</cmdname> command places the contents of an external file into the document.</shortdesc>
+    <prolog>
+        <metadata>
+            <audience type="user"/>
+            <category>document</category>
+            <prodinfo>
+                <prodname>ConTeXt</prodname>
+                <vrmlist>
+                    <vrm version="iv" release="production" modification=""/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+    <refbody>
+        <refsyn id="syntax">
+            <title>Syntax</title>
+            <synph>\input <delim>{</delim><var importance="required">FILE</var><delim>}</delim></synph>
+            <simpletable>
+                <sthead>
+                    <stentry>Name</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry>FILE</stentry>
+                    <stentry>
+                        <xref keyref="FILE" type="reference"/>
+                    </stentry>
+                    <stentry>
+                        <ph conkeyref="FILE/placeholder_desc"/>
+                    </stentry>
+                </strow>
+            </simpletable>
+            <note>An alternate syntax for this command omits the curly braces.</note>
+        </refsyn>
+        <!--<section id="notes">
+            <title>Notes</title>
+            <p></p>
+        </section>-->
+        <example id="mwe" otherprops="no_output">
+            <title>Minimal Working Example</title>
+            <codeblock outputclass="normalize-space">
+\starttext
+
+\input{knuth}
+
+\stoptext
+            </codeblock>
+        </example>
+        <example id="example_02" otherprops="no_output">
+        <title>Alternate Command Syntax</title>
+        <codeblock outputclass="normalize-space">
+\starttext
+
+\input knuth
+
+\stoptext
+        </codeblock>
+    </example>
+    </refbody>
+    <related-links>
+        <link href="https://source.contextgarden.net/tex/context/base/mkiv/file-ini.mkvi" scope="external" format="html">
+            <linktext>Command definition in the <ph conkeyref="definitions/product_name"/> source file  <filepath>file-ini.mkvi</filepath></linktext>
+        </link>
+    </related-links>
+</reference>

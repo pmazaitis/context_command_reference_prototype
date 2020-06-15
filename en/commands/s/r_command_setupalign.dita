@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_command_setupalign" xml:lang="en">
+  <title>\setupalign</title>
+  <shortdesc>The <cmdname>\setupalign</cmdname>...</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="user"/>
+      <category>style</category>
+      <prodinfo>
+        <prodname>ConTeXt</prodname>
+          <vrmlist>
+            <vrm version="iv" release="production" modification=""/>
+          </vrmlist>
+        </prodinfo>
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="syntax">
+      <title>Syntax</title>
+      <synph>\setupalign <delim>[</delim><var>OPTIONS</var><delim>]</delim></synph>
+      <simpletable>
+        <sthead>
+          <stentry>Name</stentry>
+          <stentry>Description</stentry>
+          <stentry>Values</stentry>
+        </sthead>
+        <strow id="short_options">
+          <stentry>
+            <xref keyref="OPTIONS" type="reference"/>
+          </stentry>
+          <stentry>
+            <ph conkeyref="OPTIONS/placeholder_desc"/>
+          </stentry>
+          <stentry>broad, wide, <ph importance="default">bottom</ph>, height, line, high, low, lohi, flushright, flushleft, middle, yes, no, <ph importance="default">width</ph>, normal, reset, inner, outer, flushinner, flushouter, left, right, center, disable, last, end, paragraph, lefttoright, righttoleft, l2r, r2l, table, lesshyphenation, morehyphenation, hanging, hangingboth, nothanging, hz, fullhz, nohz, hyphenated, nothyphenated, tolerant, verytolerant, stretch, extremestretch, final, 1*final, 2*final, 3*final, 4*final, more, 1*more, 2*more</stentry>
+        </strow>
+      </simpletable>
+    </refsyn>
+    <section id="options">
+      <title>Options</title>
+      <table frame="all" rowsep="1" colsep="1" id="options_table">
+        <tgroup cols="2">
+          <colspec colname="value_name" colnum="1" colwidth="1*"/>
+          <colspec colname="value_desc" colnum="2" colwidth="1*"/>
+          <thead>
+                        <row>
+                          <entry>Keyword</entry>
+                          <entry>Description</entry>
+                        </row>
+                    </thead>
+          <tbody>
+            <row>
+              <entry>broad</entry>
+              <entry></entry>
+            </row>
+              <row id="options_start">
+              <entry>wide</entry>
+              <entry></entry>
+            </row>
+            <row importance="default">
+              <entry>bottom</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>height</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>line</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>high</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>low</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>lohi</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>flushright</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>flushleft</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>middle</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>yes</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>no</entry>
+              <entry></entry>
+            </row>
+            <row importance="default">
+              <entry>width</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>normal</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>reset</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>inner</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>outer</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>flushinner</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>flushouter</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>left</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>right</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>center</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>disable</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>last</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>end</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>paragraph</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>lefttoright</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>righttoleft</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>l2r</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>r2l</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>table</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>lesshyphenation</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>morehyphenation</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>hanging</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>hangingboth</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>nothanging</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>hz</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>fullhz</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>nohz</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>hyphenated</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>nothyphenated</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>tolerant</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>verytolerant</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>stretch</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>extremestretch</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>final</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>1*final</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>2*final</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>3*final</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>4*final</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>more</entry>
+              <entry></entry>
+            </row>
+            <row>
+              <entry>1*more</entry>
+              <entry></entry>
+            </row>
+              <row id="options_stop">
+              <entry>2*more</entry>
+              <entry></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <!--<section id="notes">
+            <title>Notes</title>
+            <p></p>
+        </section>-->
+    <example id="mwe" otherprops="no_output">
+        <title>Minimal Working Example</title>
+        <codeblock outputclass="normalize-space">
+\starttext
+
+
+
+\stoptext
+        </codeblock>
+    </example>
+    <!--<example id="example_02" otherprops="no_output">
+        <title>Descriptive Example Title</title>
+        <codeblock outputclass="normalize-space">
+\starttext
+
+
+
+\stoptext
+        </codeblock>
+    </example>-->
+  </refbody>
+  <related-links>
+        <link href="https://source.contextgarden.net/tex/context/base/mkiv/spac-ali.mkiv" scope="external" format="html">
+            <linktext>Command definition in the <ph conkeyref="definitions/product_name"/> source file  <filepath>spac-ali.mkiv</filepath></linktext>
+        </link>
+    </related-links>
+</reference>

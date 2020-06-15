@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en">
+    <title>Command Inheritance</title>
+    <!--Conrefs for commands that use settings that other command inheirit. We only ever want to update these in one place, and have all of the dependant commands also update.-->
+    
+    <keydef keys="command_setupalign" href="commands/s/r_command_setupalign.dita"/>
+    <keydef keys="command_setupbuffer" href="commands/s/r_command_setupbuffer.dita"/>
+    <keydef keys="command_setuptyping" href="commands/s/r_command_setuptyping.dita"/>
+    <keydef keys="command_vspacing" href="commands/v/r_command_vspacing.dita"/>
+
+</map>

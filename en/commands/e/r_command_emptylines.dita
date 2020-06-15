@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA 1.2 Reference//EN" "/Users/goob/Opt/dita-ot/src/main/plugins/org.oasis-open.dita.v1_2/dtd/technicalContent/dtd/reference.dtd">
+<reference id="ctx_command_emptylines">
+	<title>\emptylines</title>
+	<shortdesc>Inserts a number of emptylines.</shortdesc>
+	<prolog>
+		<author>Paul Mazaitis</author>
+		<metadata>
+			<category>ii</category>
+			<category>iv</category>
+		</metadata>
+	</prolog>
+	<refbody>
+		<refsyn>
+			<synph>
+				<codeph>\emptylines</codeph>
+				<delim>[</delim>
+				<var>number of empty lines</var>
+				<delim>]</delim>
+			</synph>
+		</refsyn>
+		<section>
+			<title>Spacing Keywords</title>
+			<p>Spacing keywords determine how much vertical blank space is added.</p>
+			<ul>
+				<li>none</li>
+				<li>big</li>
+				<li>medium</li>
+				<li>small</li>
+				<li>line</li>
+				<li>halfline</li>
+				<li>quarterline</li>
+				<li>formula</li>
+				<li>white</li>
+				<li>height</li>
+				<li>depth</li>
+				<li>standard</li>
+			</ul>
+		</section>
+		<section>
+			<title>Flag Keywords</title>
+			<p>Flag keywords modify the behaviour of how space is placed.</p>
+			<ul>
+				<li>preference</li>
+				<li>samepage</li>
+				<li>max</li>
+				<li>force</li>
+				<li>disable</li>
+				<li>nowhite</li>
+				<li>back</li>
+			</ul>
+		</section>
+		<properties>
+			<property>
+				<proptype>Data type</proptype>
+				<propvalue>Boolean</propvalue>
+			</property>
+			<property>
+				<proptype>Legal values</proptype>
+				<propvalue>True (1) or False (0)</propvalue>
+			</property>
+		</properties>
+	</refbody>
+</reference>
